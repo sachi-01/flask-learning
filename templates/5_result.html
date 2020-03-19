@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--<html lang="en">-->
+
+</head>
+<body>
+
+<table border = 1>
+
+    &lt;dd&gt;username
+           &lt;input type = text name =
+              value = &quot;{{request.form.username }}&quot;&gt;
+        &lt;/dd&gt;
+
+        &lt;dt&gt;Password:&lt;/dt&gt;
+        &lt;dd&gt;&lt;input type = password name = password&gt;&lt;/dd&gt;
+     &lt;/dl&gt;
+     &lt;p&gt;&lt;input type = submit value = Login&gt;&lt;/p&gt;
+
+{% for key,value in result.items() %}
+
+<!--    -->
+<!--    &lt;tr&gt;-->
+<!--        &lt;th&gt;{{ key }}&lt;/th&gt;-->
+<!--        &lt;td&gt;{{ value }} &lt;/td&gt;-->
+<!--    &lt;/tr&gt;-->
+    <tr><th>{{key}}</th> <td>{{value}}</td></tr>
+
+    {% endfor %}
+
+</table>
+
+</body>
+</html>
+
+

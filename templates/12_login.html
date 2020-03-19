@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<h1>Login</h1>
+
+{% if error %}
+<p><strong>Error:</strong></p>{{ error }}
+{% endif %}
+
+  <form action = "" method = "POST">
+     <dl>
+        <dt>Username:</dt>
+         <dd>username <input type = text name =  username value = ""> {{ request.form.username }} </dd>
+         <dt>Password:</dt>
+         <dd>password <input type = password name = password></dd>
+     </dl>
+      <p><input type = submit value = Login></p>
+
+
+
+        &lt;dd&gt;
+           &lt;value = &quot;&quot;&gt;
+        &lt;/dd&gt;
+
+        &lt;dt&gt; &lt;/dt&gt;
+        &lt;dd&gt; &lt;&gt;  &lt;/dd&gt;
+     &lt;/dl&gt;
+     &lt;p&gt;&lt;  &gt;&lt;/p&gt;
+
+  </form>
